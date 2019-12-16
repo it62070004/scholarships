@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "psit_html",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

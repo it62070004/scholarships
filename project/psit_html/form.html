@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title></title>
+
+    <style type="text/css">
+    body{
+      background-color: #FB6B4D;
+    }
+    </style>
+
+</head>
+<body>
+        <div class="container">
+                <div class="row">
+                <img src="kmitl.jfif" width="1510" height="300">
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <br><center><font color="white"><h3>
+                            ตรวจสอบคุณสมบัติสำหรับการขอทุนเบื้องต้น
+                        </h3></font></center>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3"><font color="white">
+                        <br>
+                        กรอกเกรดเฉลี่ย :
+                        <br>
+                        ชั้นปีที่ศึกษา :
+                        <br>
+                        ความประพฤติ:
+                        <br>
+                        เข้าร่วมกิจกรรมมหาวิทยาลัย :
+                        <br>
+                        สถานะทางการเงินครอบครัว : 
+                        <br>
+                        ความสามารถพิเศษ :
+                        <br> 
+                        คณะ :
+                        <br>
+                        ระบุเพศ :
+                    </div>
+                <div class="col-lg-12"><font color="white">
+                        <br>
+                        <input type="number" id="grade" size="30"></input>
+                        <br>
+                        <form name="educantion">
+                        <input type="radio" name="years" value="ปี1">ปี1 &nbsp;
+                        <input type="radio" name="years" value="ปี2">ปี2 &nbsp;
+                        <input type="radio" name="years" value="ปี3">ปี3 &nbsp;
+                        <input type="radio" name="years" value="ปี4">ปี4 &nbsp;
+                        </form>
+                        <form>
+                        <input type="radio" name="money" value="ดี">ความประพฤติดี &nbsp;
+                        <input type="radio" name="money" value="ปานกลาง">เคยมีประวัติทัณฑ์บน &nbsp;
+                        <input type="radio" name="money" value="ดรอป">เคยลาพักการศึกษา &nbsp;
+                        </form>
+
+                        <form>
+                        <input type="radio" name="activity" value="สร้างชื่อ">สร้างชื่อเสียง &nbsp;
+                        <input type="radio" name="activity" value="บำเพ็ญ">บำเพ็ญประโยชน์ &nbsp;
+                        <input type="radio" name="activity" value="มีงาน">มีผลงาน &nbsp;
+                        </form>
+
+                        <input type="radio" name="moneyfam" value="ดี">มีสภาพคล่องทางการเงิน &nbsp;
+                        <input type="radio" name="moneyfam" value="ปานกลาง">รายได้ปานกลาง &nbsp;
+                        <input type="radio" name="moneyfam" value="ขาด">ขาดแคลนทุนทรัพย์ &nbsp;
+                        <br>
+                        <select name="master_id" id="master_id" onchange="sSelect()">
+                        <option name="cando" value="เลือก">        ----โปรดเลือก----</option>
+                        <option name="cando" value="ภาษา">      ด้านภาษาต่างประเทศ</option>
+                        <option name="cando" value="กีฬา">       ด้านกีฬา</option>
+                        <option name="cando" value="ดนตรี">      ด้านดนตรี</option>
+                        <option name="cando" value="คอมพิวเตอร์">  ด้านคอมพิวเตอร์</option>
+                        <option name="cando" value="การเข้าสังคม"> ด้านการเข้าสังคม</option>
+                        <option name="cando" value="อื่นๆ">       อื่นๆ</option>
+                        </select>
+                        
+                        <br>
+                        <select name="master_id" id="master_id" onchange="sSelect()">
+                         <option value="0" name="kmitl" >----โปรดเลือก----</option>
+                         <option value="1" name="kmitl" >คณะวิศวกรรมศาสตร์</option>
+                         <option value="2" name="kmitl" >คณะสถาปัตยกรรมศาสตร์</option>
+                         <option value="3" name="kmitl" >คณะวิทยาศาสตร์</option>
+                         <option value="4" name="kmitl" >คณะเทคโนโลยีการเกษตร</option>
+                         <option value="5" name="kmitl" >คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี</option>
+                         <option value="6" name="kmitl" >คณะอุตสาหกรรมเกษตร</option>
+                         <option value="7" name="kmitl" >คณะเทคโนโลยีสารสนเทศ</option>
+                         <option value="7" name="kmitl" >คณะการบริหารและจัดการ</option>
+                         <option value="7" name="kmitl" >คณะศิลปศาสตร์</option>
+                         <option value="7" name="kmitl" >คณะแพทยศาสตร์</option>
+                        </select>
+                        <form name="gender"> 
+                        <input type=radio name=sex value=“ชาย”>ชาย &nbsp;
+                        <input type=radio name=sex value=“หญิง”>หญิง &nbsp;
+                        </form>
+                        <br>
+                        <input type="checkbox" name="study"> ปัจจุบันกำลังศึกษาที่สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</font>
+                        <br>
+
+                    <center><button onclick="myFunction()">submit</button></center>
+                        <br>
+                    </div>
+                  </div>
+                <div class="row">
+
+
+                <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+                <a class="navbar-brand" href="main page.html">Main Page</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropup">
+                      <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select page</a>
+                      <div class="dropdown-menu" aria-labelledby="dropdown10">
+                        <a class="dropdown-item" href="scholarship.html">All Scholarships</a>
+                        <a class="dropdown-item" href="kmitl.html">About KMITL</a>
+                        <a class="dropdown-item" href="form.html">Check Qualifications</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+          </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+
+</body>
+</html>
