@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title></title>
+
+    <style type="text/css">
+    body{
+      background-color: #FB6B4D;
+    }
+    </style>
+
+
+</head>
+<body>
+
+ <script>
+    function myFunction() {
+
+    var  grade  = document.getElementsByName('grade '); 
+              
+            for(i = 0; i < grade .length; i++) 
+    { 
+                if(grade [i].checked) 
+                grrad =  grade [i].value;
+    // ปีการศึกษา 
+    var years = document.getElementsByName('years'); 
+              
+            for(i = 0; i < years.length; i++) 
+    { 
+                if(years[i].checked) 
+                pee = years[i].value; 
+    }
+    // ความประพฤติ
+    var good = document.getElementsByName('good'); 
+              
+            for(i = 0; i < good.length; i++) 
+    { 
+                if(good[i].checked) 
+                best = good[i].value; 
+    }
+    //ผลงาน
+    var activity = document.getElementsByName('activity'); 
+              
+            for(i = 0; i < activity.length; i++) 
+    { 
+                if(activity[i].checked) 
+                party = activity[i].value;
+    }
+    //การเงิน
+    var money = document.getElementsByName('money'); 
+              
+            for(i = 0; i < money.length; i++) 
+    { 
+                if(money[i].checked) 
+                moneyfam = money[i].value;
+    }
+    var cando = document.getElementsByName('cando'); 
+              
+            for(i = 0; i < cando.length; i++) 
+    { 
+                if(cando[i].checked) 
+                dodo = cando[i].value;
+    }
+    var kmitl = document.getElementsByName('kmitl'); 
+              
+            for(i = 0; i < kmitl.length; i++) 
+    { 
+                if(kmitl[i].checked) 
+                kana = kmitl[i].value;
+    }
+    //เพศ
+    var gender = document.getElementsByName('gender'); 
+              
+            for(i = 0; i < gender.length; i++) 
+    { 
+                if(gender[i].checked) 
+                sex = gender[i].value;
+    }
+    var str = "มูลนิธิตั้งเซ็กกิม (บริษัท นานมี จำกัด)";
+    var nam = str.link("https://www.arch.kmitl.ac.th/%e0%b8%a1%e0%b8%b9%e0%b8%a5%e0%b8%99%e0%b8%b4%e0%b8%98%e0%b8%b4%e0%b8%95%e0%b8%b1%e0%b9%89%e0%b8%87%e0%b9%80%e0%b8%8b%e0%b9%87%e0%b8%81%e0%b8%81%e0%b8%b4%e0%b8%a1-%e0%b8%9a%e0%b8%a3%e0%b8%b4%e0%b8%a9/");
+    if (moneyfam == "ขาด" || best == "ดี"){
+        document.getElementsById("outgrade").innerhtml = nam;
+    }
+}
+}
+</script>
+
+        <div class="container">
+                <div class="row">
+                <img src="kmitl.jfif" width="1510" height="300">
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <br><center><font color="white"><h3>
+                            ตรวจสอบคุณสมบัติสำหรับการขอทุนเบื้องต้น
+                        </h3></font></center>
+                    </div>
+                </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3"><font color="white">
+                        <br>
+                        กรอกเกรดเฉลี่ย :
+                        <br>
+                        ชั้นปีที่ศึกษา :
+                        <br>
+                        ความประพฤติ:
+                        <br>
+                        เข้าร่วมกิจกรรม:
+                        <br>
+                        การเงินครอบครัว : 
+                        <br>
+                        ความสามารถพิเศษ :
+                        <br> 
+                        คณะ :
+                        <br>
+                        <br>
+                        <br>
+                        ระบุเพศ :
+                    </font>
+                    </div>
+
+                    <div class="col-9"><font color="white">
+                        <br>
+                        <input type="radio" name="grade" value="มากกว่าเท่ากับ 3">มากกว่า 3 &nbsp;
+                        <input type="radio" name="grade" value="มากกว่าเท่ากับ 2.75">มากกว่าเท่ากับ 2.75 &nbsp;
+                        <input type="radio" name="grade" value="มากกว่าเท่ากับ 2.5">มากกว่าเท่ากับ 2.5 &nbsp;
+                        <input type="radio" name="grade" value="มากกว่าเท่ากับ 2">มากกว่าเท่ากับ 2 &nbsp;
+                        <input type="radio" name="grade" value="มากกว่าเท่ากับ 2">น้อยกว่า 2 &nbsp;
+                        <br>
+                        <form name="educantion">
+                        <input type="radio" name="years" value="ปี1">ปี1 &nbsp;
+                        <input type="radio" name="years" value="ปี2">ปี2 &nbsp;
+                        <input type="radio" name="years" value="ปี3">ปี3 &nbsp;
+                        <input type="radio" name="years" value="ปี4">ปี4 &nbsp;
+                        </form>
+                        <form>
+                        <input type="radio" name="good" value="ดี">ความประพฤติดี &nbsp;
+                        <input type="radio" name="good" value="ปานกลาง">เคยมีประวัติทัณฑ์บน &nbsp;
+                        <input type="radio" name="good" value="ดรอป">เคยลาพักการศึกษา &nbsp;
+                        </form>
+
+                        <form>
+                        <input type="radio" name="activity" value="สร้างชื่อ">สร้างชื่อเสียง &nbsp;
+                        <input type="radio" name="activity" value="บำเพ็ญ">บำเพ็ญประโยชน์ &nbsp;
+                        <input type="radio" name="activity" value="มีงาน">มีผลงาน &nbsp;
+                        </form>
+
+                        <input type="radio" name="money" value="ดี">มีสภาพคล่องทางการเงิน &nbsp;
+                        <input type="radio" name="money" value="ปานกลาง">รายได้ปานกลาง &nbsp;
+                        <input type="radio" name="money" value="ขาด">ขาดแคลนทุนทรัพย์ &nbsp;
+                        <br>
+
+                        <input type="radio" name="cando" value="ภาษา">      ด้านภาษาต่างประเทศ
+                        <input type="radio" name="cando" value="กีฬา">       ด้านกีฬา
+                        <input type="radio" name="cando" value="ดนตรี">      ด้านดนตรี
+                        <input type="radio" name="cando" value="คอมพิวเตอร์">  ด้านคอมพิวเตอร์
+                        <input type="radio" name="cando" value="การเข้าสังคม"> ด้านการเข้าสังคม
+                        <input type="radio" name="cando" value="อื่นๆ">       อื่นๆ
+
+                        
+                        <br>
+                         <input type="radio" value="คณะวิศวกรรมศาสตร์" name="kmitl"  >คณะวิศวกรรมศาสตร์
+                         <input type="radio" value="คณะสถาปัตยกรรมศาสตร์" name="kmitl"  >คณะสถาปัตยกรรมศาสตร์
+                         <input type="radio" value="คณะวิทยาศาสตร์" name="kmitl"  >คณะวิทยาศาสตร์
+                         <input type="radio" value="คณะเทคโนโลยีการเกษตร" name="kmitl"  >คณะเทคโนโลยีการเกษตร
+                         <input type="radio" value="คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี" name="kmitl"  >คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี
+                         <input type="radio" value="คณะอุตสาหกรรมเกษตร" name="kmitl"  >คณะอุตสาหกรรมเกษตร
+                         <input type="radio" value="คณะเทคโนโลยีสารสนเทศ" name="kmitl"  >คณะเทคโนโลยีสารสนเทศ
+                         <input type="radio" value="คณะการบริหารและจัดการ" name="kmitl"  >คณะการบริหารและจัดการ
+                         <input type="radio" value="คณะศิลปศาสตร์" name="kmitl"  >คณะศิลปศาสตร์
+                         <input type="radio" value="คณะแพทยศาสตร์" name="kmitl"  >คณะแพทยศาสตร์
+
+                        <form name="gender"> 
+                        <input type=radio name=sex value=“ชาย”>ชาย &nbsp;
+                        <input type=radio name=sex value=“หญิง”>หญิง &nbsp;
+                        </form>
+                        <br>
+                        <input type="checkbox" name="study"> ปัจจุบันกำลังศึกษาที่สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</font>
+                        <br>
+                        <center><button onclick="myFunction()">submit</button></center>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+
+                <div class="row">
+                <p id="outgrade"></p>
+                <br>
+                <p id="outyears"></p>
+                <br>
+                <p id="outgood"></p>
+                <p id="outactivity"></p>
+                <p id="outmoney"></p>
+                <p id="outcando"></p>
+                <p id="outkmitl"></p>
+                <p id="outgender"></p>
+                <br><br><br><br>
+                </div>
+
+
+                <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+                <a class="navbar-brand" href="main page.html">Main Page</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropup">
+                      <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select page</a>
+                      <div class="dropdown-menu" aria-labelledby="dropdown10">
+                        <a class="dropdown-item" href="scholarship.html">All Scholarships</a>
+                        <a class="dropdown-item" href="kmitl.html">About KMITL</a>
+                        <a class="dropdown-item" href="form.html">Check Qualifications</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+    </div>
+</body>
+</html>
